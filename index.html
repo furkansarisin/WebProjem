@@ -4,48 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Furkan Sarışın - Portföy</title>
+    <title>Furkan Sarışın - Projelerim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Furkan Sarışın</h1>
         <nav>
             <ul>
+                <li><a href="#about">Hakkında</a></li>
                 <li><a href="#projects">Projelerim</a></li>
                 <li><a href="#contact">İletişim</a></li>
             </ul>
         </nav>
     </header>
+    
+    <main>
+        <section id="about" class="animated-section">
+            <h2>Hakkında</h2>
+            <p>Ben bir yazılım geliştiricisiyim. Yazılım geliştirme, problem çözme ve yenilikçi projeler oluşturma konularında tutkuluyum.</p>
+            <button onclick="scrollToProjects()">Projelerime Göz At</button>
+        </section>
 
-    <section id="projects">
-        <h2>Projelerim</h2>
-        <div class="project-container">
+        <section id="projects" class="animated-section">
+            <h2>Projelerim</h2>
             <div class="project">
                 <h3>Proje 1</h3>
-                <p>Proje 1 açıklaması burada yer alacak.</p>
-                <a href="https://github.com/yourusername/project1" target="_blank">GitHub Linki</a>
+                <img src="https://via.placeholder.com/300" alt="Proje 1 Resmi">
+                <p>Açıklama: Bu proje ile kullanıcıların ihtiyaçlarına göre çözümler sunmayı hedefliyorum. <a href="https://github.com/username/proje1" target="_blank">GitHub'da gör</a></p>
             </div>
             <div class="project">
                 <h3>Proje 2</h3>
-                <p>Proje 2 açıklaması burada yer alacak.</p>
-                <a href="https://github.com/yourusername/project2" target="_blank">GitHub Linki</a>
+                <img src="https://via.placeholder.com/300" alt="Proje 2 Resmi">
+                <p>Açıklama: Bu proje, veri analizi ve görselleştirme üzerine odaklanmıştır. <a href="https://github.com/username/proje2" target="_blank">GitHub'da gör</a></p>
             </div>
             <div class="project">
                 <h3>Proje 3</h3>
-                <p>Proje 3 açıklaması burada yer alacak.</p>
-                <a href="https://github.com/yourusername/project3" target="_blank">GitHub Linki</a>
+                <img src="https://via.placeholder.com/300" alt="Proje 3 Resmi">
+                <p>Açıklama: Bu proje, bir mobil uygulama geliştirme sürecini kapsamaktadır. <a href="https://github.com/username/proje3" target="_blank">GitHub'da gör</a></p>
             </div>
-            <!-- Diğer projeleri ekleyin -->
-        </div>
-    </section>
+        </section>
 
-    <section id="contact">
-        <h2>İletişim</h2>
-        <div class="contact-icons">
-            <a href="https://github.com/yourusername" target="_blank" class="icon github"><img src="github-logo.png" alt="GitHub"></a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" class="icon linkedin"><img src="linkedin-logo.png" alt="LinkedIn"></a>
-        </div>
-    </section>
+        <section id="contact" class="animated-section">
+            <h2>İletişim</h2>
+            <p>LinkedIn: <a href="https://linkedin.com/in/username" target="_blank">linkedin.com/in/username</a></p>
+            <p>GitHub: <a href="https://github.com/username" target="_blank">github.com/username</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Furkan Sarışın. Tüm hakları saklıdır.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
