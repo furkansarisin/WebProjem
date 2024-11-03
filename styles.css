@@ -1,88 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #eef2f3;
     color: #333;
 }
 
 header {
-    background-color: #333;
+    background: linear-gradient(135deg, #6e7dff, #2d2a62);
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
 }
 
-section {
-    margin: 20px;
+nav a:hover {
+    color: #ffcc00;
+}
+
+h2 {
+    margin-top: 40px;
+    text-align: center;
+    color: #444;
+}
+
+.animated-section {
+    margin: 40px auto;
     padding: 20px;
-    background-color: #fff;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.project-container {
-    display: flex;
-    flex-direction: row; /* Yatay görüntüleme */
-    overflow-x: auto; /* Taşma durumunda yatay kaydırma */
+.animated-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 .project {
-    flex: 0 0 auto; /* Projelerin boyutunu ayarlama */
-    width: 300px; /* Proje kutusunun genişliği */
-    margin-right: 20px; /* Projeler arasında boşluk */
-    padding: 15px;
-    background-color: #e0e0e0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    max-width: 300px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
 }
 
-.contact-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    opacity: 0; /* Başlangıçta görünmez */
-    transform: translateY(20px); /* Aşağıdan gelmesi için konum ayarı */
-    animation: fadeIn 0.5s forwards; /* Animasyon */
-    animation-delay: 0.5s; /* Gecikmeli görünme */
+.project img:hover {
+    transform: scale(1.05);
 }
 
-.icon {
-    margin: 0 10px;
-    transition: transform 0.3s; /* Hover efektleri için geçiş */
+button {
+    background-color: #6e7dff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.icon img {
-    width: 40px; /* Logo boyutu */
-    height: 40px; /* Logo boyutu */
+button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
 }
 
-.icon:hover {
-    transform: scale(1.1); /* Hover etkisi */
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
