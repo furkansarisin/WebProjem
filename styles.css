@@ -80,7 +80,7 @@ h2 {
 
 .project img {
     width: 100%;
-    max-width: 500px; /* Daha büyük boyut */
+    max-width: 300px; /* Daha büyük boyut */
     border-radius: 8px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
